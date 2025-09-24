@@ -1,0 +1,86 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ff0000; /* Fundo vermelho */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+header .logo img {
+  height: 50px;     
+  width: auto;      
+  display: block;
+}
+
+/* Navegação */
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #fbbf24; /
+}
+
+/* Espaço para compensar o header fixo */
+main {
+  padding: 6rem 2rem 2rem;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+form input, 
+form textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #1e3a8a;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #0f172a; /* Azul mais escuro */
+}
